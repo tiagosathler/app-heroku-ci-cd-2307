@@ -16,8 +16,8 @@ module.exports = (_req, res, next) => {
     <h2>Variáveis de ambiente:</h2>
     <ul>
     ${Object.entries(env).map(([key, value]) => (`<li>${key}: ${value}</li>`)).join('<br>')}
+    </ul>
     <p><small>Fim do relatório</small></p>
-    <
     `;
     return res.status(200).send(html);
   } catch (e) {
