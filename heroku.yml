@@ -1,0 +1,9 @@
+setup:
+  config:
+    ENVIRONMENT: Production
+    FROM: Remote
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: node index.js
