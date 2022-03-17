@@ -1,11 +1,8 @@
 require('dotenv').config();
 
-const { PORT, ENVIRONMENT, FROM } = process.env
-  || { 
-    PORT: 3000,
-    ENVIRONMENT: 'not defined',
-    FROM: 'nod defined',
-  };
+const PORT = process.env.PORT || 3001;
+const ENVIRONMENT = process.env.ENVIRONMENT || 'not defined';
+const FROM = process.env.FROM || 'not defined'; 
 
 module.exports = (_req, res, next) => {
   try {
