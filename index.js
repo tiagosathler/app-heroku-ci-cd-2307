@@ -27,5 +27,5 @@ app.get('/ping', controllers.ping);
 app.use(middlewares.error);
 
 app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}`);
+  console.log(`App listening on port ${PORT}!`);
 });
